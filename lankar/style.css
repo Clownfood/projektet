@@ -1,0 +1,285 @@
+/*----- ALLMÄNT -----*/
+body {
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 150px auto 1fr auto;
+    grid-template-areas: 
+    "H H H H H H H H H H H H"
+    "N N N N N N N N N N N N"
+    ". C C C C C C C C C C ."
+    "F F F F F F F F F F F F"
+    ;
+
+    min-height: 100vh;
+
+    background-color:#8b90ad ;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+/*----- HEADER -----*/
+header {
+    grid-area: H;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background-color:#344966 ;
+    color: #fff;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2rem;
+
+    box-shadow: inset 0px -28px 13px 0px rgba(18, 18, 27, 0.336);
+
+    background-image: url("images/bg.png");
+
+}
+#titel{
+    color: #FFFFFF;
+    text-shadow: #252525 3px 5px 2px;
+
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*----- NAV -----*/
+nav {
+    grid-area: N;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 5px;
+    
+    background-color: #FFDC5E;
+    color: #fff;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.navlist{
+    display: flex;
+    align-items: center;
+    
+    
+    padding: 0;
+    margin: 0;
+    
+}
+
+.navitem{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    
+    border-right:#e0c358 solid 2px ;
+    
+
+}
+
+.navitem:last-of-type {
+    border: none;
+}
+
+.navitem:hover {
+    background-color: #e0c358 ;
+    cursor: pointer;
+}
+
+#menu {
+    font-size: 2.3rem;
+    
+    display: flex;
+    align-self: center;
+
+    padding: 0;
+    margin: 0;
+    padding-right: 10px !important;
+    padding-bottom: 6px !important;
+}
+.bar {
+    width: 45px;
+    height: 5px;
+    
+    justify-self: flex-start;
+
+    background-color: white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+
+    margin: 7px 0;
+    padding: 0;
+}
+
+.ml {
+    max-height: 100px;
+}
+
+/*-----SIDEBAR-----*/
+.medlembar {
+    min-height: 100vh;
+    position: fixed;
+    width: 300px;
+
+    left: -300px;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    background-color: #344966;
+
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+.medlembar.ute {
+    left: 0px;
+}
+
+.medlembar ul li {
+    color:white;
+    list-style-type: none;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+
+    margin: 0;
+    padding: 0;
+}
+
+.medlembar li {
+    width: 100%;
+
+    border-bottom: rgba(255, 255, 255, 0.5) solid 5px;
+    padding-left: 10px;
+    
+}
+
+.medlembar h2 {
+    text-align: center;
+    padding-top: 50px
+}
+
+/*----- CONTENT -----*/
+.content {
+    grid-area: C;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    
+    padding: 40px;
+    
+    background-color: #999ebd;
+    color: #fff;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2rem;
+
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+#brödtext {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.karta{
+    border: white solid 15px;
+    border-radius: 15px;
+    display: inline-block;
+
+    background-color: #8b90ad;
+    
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    max-width: 1000px;
+    
+    box-shadow: 0px 0px 10px -3px #000000;
+}
+svg {
+    border-top: white solid 15px;
+}
+#karttext {
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.fakta {
+
+    grid-column: 2/3;
+}
+.fruta {
+    border: rgb(235, 232, 232) 5px solid;
+    border-collapse: collapse;
+
+    display: grid;
+    grid-template-rows: auto 1fr ;
+}
+.fruta > h3 {
+    justify-self: center;
+}
+table {
+    background-color: rgb(218, 218, 218);
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+th {
+    text-align: center;
+
+    text-decoration: underline;
+}
+td { 
+    font-size: 1.5rem;
+}
+th, td, tr {
+    padding: 10px;
+}
+/*----- FOOTER -----*/
+footer {
+    grid-area: F;
+
+    background-color: #344966;
+    padding: 20px;
+
+    color:white;
+}
+
+footer > a, footer > a:visited {
+    color: white;
+
+    text-decoration: none;
+
+}
+footer > a:hover {
+    color: gray;
+
+    text-decoration: underline;
+}
+/*----- ASIDE -----*/
+.a1 {
+    grid-area: A;
+}
+.a2 {
+    grid-area: A;
+}
+
+

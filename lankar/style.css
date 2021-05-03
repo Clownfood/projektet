@@ -30,25 +30,38 @@ header {
     align-items: center;
     justify-content: center;
 
-    padding: 20px;
-
     background-color:#344966 ;
+    background: url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
     color: #fff;
 
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 2rem;
 
-    box-shadow: inset 0px -28px 13px 0px rgba(18, 18, 27, 0.336);
-
-    background-image: url("images/bg.png");
+    /*box-shadow: inset 0px -28px 13px 0px rgba(18, 18, 27, 0.336);*/
 
 }
 #titel{
+    
     color: #FFFFFF;
     text-shadow: #252525 3px 5px 2px;
-
-    font-size: 3rem;
+    
+    font-size: 4rem;
     font-weight: bold;
+
+}
+
+header > a {
+    display: flex;
+    justify-content: center;
+    
+    background-color: rgba(0, 0, 0, 0.178);
+    padding: 10px;
+
+
+    width: 100%;
+
 }
 
 /*----- NAV -----*/
@@ -90,8 +103,6 @@ nav {
     margin: 0;
     
     border-right:#e0c358 solid 2px ;
-    
-
 }
 
 .navitem:last-of-type {
@@ -132,50 +143,123 @@ nav {
 }
 
 /*-----SIDEBAR-----*/
-.medlembar {
-    min-height: 100vh;
+#sidebar {
     position: fixed;
     width: 300px;
+    height: 100%;
+    background:#344966;
+    color:rgba(255, 255, 255, 0.9);
 
-    left: -300px;
+    padding: 0;
+    margin: 0;
 
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+    left: -300px;
 
-    background-color: #344966;
+    transition: all 500ms ease-in-out;
 
-    color: white;
-
-    margin: 0;
-    padding: 0;
+    z-index: 2;
 }
 
-.medlembar.ute {
+.scroll{
+    overflow-y: scroll;
+
+    height: 80vh;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 0.5rem;
+
+    padding-top: 3px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+}
+
+#sidebar.active{
     left: 0px;
+    box-shadow: 1px 0px 13px 0px rgba(0,0,0,0.75);
+
 }
 
-.medlembar ul li {
-    color:white;
+#sidebar ul li{
     list-style-type: none;
-    padding-bottom: 10px !important;
-    padding-top: 10px !important;
+    padding: 15px 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.26);
 
-    margin: 0;
-    padding: 0;
+}
+ul {
+    padding-inline-start: 0px;
+}
+#sidebar li:hover {
+    background: rgba(0, 0, 0, 0.26);
+    cursor: pointer;
 }
 
-.medlembar li {
+#sidebar h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.titelslider {
     width: 100%;
 
-    border-bottom: rgba(255, 255, 255, 0.5) solid 5px;
-    padding-left: 10px;
+    padding-bottom: 20px;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.26);
+    box-shadow: 0 3px 5px -3px black;
+}
+
+.titelslider h1 {
+
+    margin: 0;
+}
+
+#X {
+    position: relative;
     
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 2rem;
 
-.medlembar h2 {
-    text-align: center;
-    padding-top: 50px
-}
+    background: #00000023;
 
+    margin-left: 250px;
+}
+#X:hover{
+    cursor: pointer;
+}
+#black {
+    position: absolute;
+
+    
+    
+    height: 2000px;
+    width: 100%;
+
+    background-color: hsla(0, 0%, 0%, 0.4);
+
+    z-index: 1;
+
+    display: none;
+
+    animation: background-color ease-in-out;
+}
+#black.active {
+    display: inherit;
+}
 /*----- CONTENT -----*/
 .content {
     grid-area: C;
@@ -194,6 +278,30 @@ nav {
 
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+
+#EU-karta {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 100%;
+}
+
+#ml:hover, #ml:hover {
+    stroke: #FFDC5E  !important;
+    stroke-width:5px;
+    stroke-linejoin: round;
+    fill: #FFDC5E  !important;
+    cursor: pointer;
+}
+
+#ml {
+    fill: #003399;
+    stroke: black;
+    stroke-width: 1px;
+}
+  
 
 #brödtext {
     grid-column: 2/3;
@@ -222,22 +330,43 @@ svg {
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-.fakta {
+#info-box {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid #8b90ad;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: arial;
+  }
+  
 
-    grid-column: 2/3;
+.fakta {
+    grid-column: 1/3;
+
+    font-size: 1rem;
 }
 .fruta {
     border: rgb(235, 232, 232) 5px solid;
     border-collapse: collapse;
+    height: auto;
+
+    grid-column: 3/-1;
 
     display: grid;
     grid-template-rows: auto 1fr ;
+
+    box-shadow: inset 0px 0px 3px 1px #000000;
 }
 .fruta > h3 {
-    justify-self: center;
+    text-align: center;
 }
 table {
-    background-color: rgb(218, 218, 218);
+    background-color: rgba(218, 218, 218, 0.26);
     color: black;
 
     font-family: Arial, Helvetica, sans-serif;

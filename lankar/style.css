@@ -105,6 +105,10 @@ nav {
     border-right:#e0c358 solid 2px ;
 }
 
+.navitem:first-of-type{
+    padding: 10px !important;
+}
+
 .navitem:last-of-type {
     border: none;
 }
@@ -349,7 +353,18 @@ svg {
     grid-column: 1/3;
 
     font-size: 1rem;
+
+    color: #dadada;
 }
+
+.fakta h4, h2 {
+    border-bottom: 2px rgba(0, 0, 0, 0.26) solid;
+    margin-right:10px;
+    padding: 10px;
+    padding-left: 0 !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .fruta {
     border: rgb(235, 232, 232) 5px solid;
     border-collapse: collapse;

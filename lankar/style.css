@@ -29,6 +29,10 @@ a {
     color:white;
     text-decoration: none;
 }
+ul{
+    list-style-type: none;
+
+}
 /*----- HEADER -----*/
 header {
     grid-area: H;
@@ -178,7 +182,9 @@ nav {
 .scroll{
     overflow-y: scroll;
 
-    height: 90vh;
+    height: 82vh;
+
+    margin-top: 0px !important;
 }
 
 .scroll::-webkit-scrollbar{
@@ -209,8 +215,11 @@ ul {
 }
 #sidebar li:hover {
     background: rgba(0, 0, 0, 0.26);
-    cursor: pointer;
 }
+#sidebar a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+} 
 
 #sidebar h1 {
     display: flex;
@@ -250,6 +259,7 @@ ul {
     background: #00000023;
 
     margin-left: 250px;
+    margin-top: 10px;
 }
 #X:hover{
     cursor: pointer;
@@ -330,7 +340,7 @@ ul {
     left: 0;
   }
 
-#ml:hover, #ml:hover {
+.ml:hover, .ml:hover {
     stroke: #FFDC5E  !important;
     stroke-width:5px;
     stroke-linejoin: round;
@@ -338,7 +348,7 @@ ul {
     cursor: pointer;
 }
 
-#ml {
+.ml {
     fill: #003399;
     stroke: black;
     stroke-width: 1px;
@@ -451,25 +461,49 @@ th, td, tr {
 }
 /*----- FOOTER -----*/
 footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
     grid-area: F;
 
     background-color: #344966;
     padding: 20px;
 
     color:white;
+
 }
 
 footer > a, footer > a:visited {
     color: white;
-
+    
     text-decoration: none;
-
+    
 }
-footer > a:hover {
+footer a:hover {
     color: gray;
-
+    
     text-decoration: underline;
 }
+
+.footer {
+    width: auto;
+    
+    display: grid;
+    
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+.rubrik{
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+
+    height: 30px;
+    width: 110px;
+
+}
+
 /*----- ASIDE -----*/
 .a1 {
     grid-area: A;

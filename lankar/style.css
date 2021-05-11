@@ -300,6 +300,20 @@ ul {
 
 }
 
+.centertitel{
+    grid-column: 2/3;
+
+    text-align: center;
+}
+
+.content p, h4{
+    grid-column: 1/-1;
+    margin: 10px;
+}
+.content p{
+    font-size: 1rem;
+}
+
 .contentindex {
     grid-area: C;
     
@@ -354,6 +368,10 @@ ul {
     stroke-width: 1px;
 }
   
+.centertext{
+    text-align: center;
+
+}
 
 #brödtext {
     grid-column: 2/12;

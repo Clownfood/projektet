@@ -444,7 +444,7 @@ ul {
 
     font-size: 1rem;
 
-    color: #dadada;
+    color: #fff;
 }
 
 .fakta h4, h2 {
@@ -612,6 +612,9 @@ footer a:hover {
     }
     tr, td, th {
         font-size: 1rem;
+    }
+    .content{
+        padding: 20px;
     }
 
 

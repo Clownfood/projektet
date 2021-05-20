@@ -43,7 +43,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    background-color:#344966 ;
+    background-color:#344966 !important ;
     background: url(../images/bg.png);
     background-size: cover;
     background-position: center;
@@ -636,6 +636,9 @@ footer a:hover {
     }
     .contentindex{
         grid-template-rows: auto auto auto auto 200px;
+    }
+    #beskrivning{
+        min-width: 75%;
     }
 
 }

@@ -330,13 +330,13 @@ ul {
     color: #fff;
     
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto 1fr;
+    grid-template-rows: auto auto auto auto;
 
 }
 .container--ph {
@@ -344,7 +344,7 @@ ul {
     margin-left: 10%;
     position: relative;
 
-    min-height: 250px;
+    height: 200px;
 
     grid-column: 1/12;
     grid-row: 4/5;
@@ -385,7 +385,7 @@ ul {
     grid-row: 1/2;
 }
 .karta{
-    border: white solid 15px;
+    border: white solid 10px;
     border-radius: 15px;
     display: inline-block;
 
@@ -397,7 +397,6 @@ ul {
 
     box-shadow: 0px 0px 10px -3px #000000;
 
-    height: 100px;
 }
 
 
@@ -417,7 +416,7 @@ ul {
     margin-left: 10%;
 
     height: auto;
-    width: 100%;
+    width: 30%;
 }
 
 #EU-karta {
@@ -554,32 +553,32 @@ footer a:hover {
 /*----- MEDIA ----*/
 @media all and (max-width: 3500px) {
     .container--ph {
-        padding-top: 48%;
+        padding-top: 50%;
     }
 }
 @media all and (max-width: 2500px) {
     .container--ph {
-        padding-top: 45%;
+        padding-top: 48%;
     }
 }
 @media all and (max-width: 2000px) {
     .container--ph {
-        padding-top: 40%;
+        padding-top: 45%;
     }
 }
 @media all and (max-width: 1500px) {
     .container--ph {
-        padding-top: 35%;
+        padding-top: 40%;
     }
 }
 @media all and (max-width: 1200px) {
     .container--ph {
-        padding-top: 30%;
+        padding-top: 35%;
     }
 }
 @media all and (max-width: 1026px) {
     .container--ph {
-        padding-top: 25%;
+        padding-top: 30%;
     }
     nav{
         font-size: 1rem;
@@ -587,18 +586,14 @@ footer a:hover {
 }
 @media all and (max-width: 900px) {
     .container--ph {
-        padding-top: 17%;
+        padding-top: 25%;
     }
 }
-@media all and (max-width: 800px) {
-    .container--ph {
-        padding-top: 10%;
-    }
-    .karta{
-        height: 100px;
-    }
-}
+
 @media all and (max-width: 764px) {
+    .container--ph {
+        padding-top: 20%;
+    }
     .navitem{
         padding: 10px;
     }
@@ -616,14 +611,33 @@ footer a:hover {
     .content{
         padding: 20px;
     }
+    .container--ph {
+        padding-top: 15%;
+    }
 
 
 }
 
 @media all and (max-width: 540px) {
     footer{
-        display: block;
+        display: block
     }
+    #brödtext {
+        font-size: 1rem;
+    }
+    #karttext{
+        font-size: 1rem;
+    }
+    .container--ph {
+        padding-top: 15%;
+        height: 180%;
+        padding-bottom: 10px;
+        position: 0;
+    }
+    .contentindex{
+        grid-template-rows: auto auto auto auto 200px;
+    }
+
 }
 
 @-o-viewport{

@@ -43,21 +43,21 @@ header {
     align-items: center;
     justify-content: center;
 
-    background-color:#344966 !important ;
     background: url(../images/bg.png);
     background-size: cover;
     background-position: center;
     color: #fff;
-
+    
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 2rem;
-
-
+    
+    
     
     /*box-shadow: inset 0px -28px 13px 0px rgba(18, 18, 27, 0.336);*/
     
 }
 #titel{
+    background-color:#344966;
     
     color: #FFFFFF;
     text-shadow: #252525 3px 5px 2px;

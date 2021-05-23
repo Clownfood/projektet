@@ -468,6 +468,7 @@ figcaption{
     font-size: 1.5rem;
 
     color: #fff;
+
 }
 
 .fakta h4, h2 {
@@ -581,26 +582,39 @@ footer a:hover {
     .container--ph {
         padding-top: 50%;
     }
+    .fruta {
+        height: 45%;
+    }
 }
 @media all and (max-width: 2500px) {
     .container--ph {
         padding-top: 48%;
+    }
+    .fruta {
+        height: 50%;
     }
 }
 @media all and (max-width: 2000px) {
     .container--ph {
         padding-top: 45%;
     }
+    .fruta {
+        height: 65%;
+    }
 }
 @media all and (max-width: 1500px) {
     .container--ph {
         padding-top: 40%;
+    }
+    .fruta {
+        height: 100%;
     }
 }
 @media all and (max-width: 1200px) {
     .container--ph {
         padding-top: 35%;
     }
+    
 }
 @media all and (max-width: 1026px) {
     .container--ph {

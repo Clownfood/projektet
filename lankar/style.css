@@ -291,11 +291,10 @@ ul {
 /*----- CONTENT -----*/
 .content {
     grid-area: C;
-    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 1fr;
     padding: 40px;
+
     
     background-color: #999ebd;
     color: #fff;
@@ -306,6 +305,21 @@ ul {
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 
 }
+.content2 {
+    grid-area: C;
+    padding: 40px;
+
+    
+    background-color: #999ebd;
+    color: #fff;
+    
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2rem;
+    
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
 
 .centertitel{
     grid-column: 2/3;
@@ -318,6 +332,13 @@ ul {
     margin: 10px;
 }
 .content p{
+    font-size: 1rem;
+}
+.content2 p, h4{
+    grid-column: 1/-1;
+    margin: 10px;
+}
+.content2 p{
     font-size: 1rem;
 }
 
@@ -456,7 +477,7 @@ figcaption{
 
 #flagga {
     min-height: auto;
-    width: 70%;
+    width: 10%;
 
     border: 2px white solid;
 }
@@ -490,8 +511,6 @@ figcaption{
     grid-template-rows: auto 1fr ;
     
     box-shadow: inset 0px 0px 3px 1px #000000;
-
-
 }
 .fruta > h3 {
     text-align: center;
@@ -519,6 +538,9 @@ th, td, tr {
     color: gray;
     
     text-decoration: underline;
+}
+h4 {
+    height: auto
 }
 
 .kallor{
@@ -585,23 +607,20 @@ footer a:hover {
         padding-top: 50%;
     }
     .fruta {
-        height: 45%;
+        height: 100%;
     }
 }
 @media all and (max-width: 2500px) {
     .container--ph {
         padding-top: 48%;
     }
-    .fruta {
-        height: 50%;
-    }
 }
 @media all and (max-width: 2000px) {
     .container--ph {
         padding-top: 45%;
     }
-    .fruta {
-        height: 65%;
+    #flagga{
+        width: 30%;
     }
 }
 @media all and (max-width: 1500px) {
@@ -612,11 +631,11 @@ footer a:hover {
         height: 100%;
     }
 }
+
 @media all and (max-width: 1200px) {
     .container--ph {
         padding-top: 35%;
     }
-    
 }
 @media all and (max-width: 1026px) {
     .container--ph {
@@ -624,6 +643,9 @@ footer a:hover {
     }
     nav{
         font-size: 1rem;
+    }
+    #flagga{
+        width: 70%;
     }
 }
 @media all and (max-width: 900px) {
@@ -640,7 +662,7 @@ footer a:hover {
         padding: 10px;
     }
 }
-@media all and (max-width: 630px) {
+@media all and (max-width: 830px) {
     .fruta {
         grid-column: 2/3;
     }

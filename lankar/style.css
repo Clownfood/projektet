@@ -490,6 +490,8 @@ figcaption{
     grid-template-rows: auto 1fr ;
     
     box-shadow: inset 0px 0px 3px 1px #000000;
+
+
 }
 .fruta > h3 {
     text-align: center;

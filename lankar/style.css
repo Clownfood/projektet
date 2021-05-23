@@ -436,12 +436,36 @@ ul {
     padding: 5px;
     font-family: arial;
   }
+
+.Flagga1 {
+    min-height: auto;
+    width: 50%;
+
+    grid-column: 1/2;
+}
+.Flagga2 {
+    min-height: auto;
+    width: 50%;
+
+    grid-column: 2/3;
+}
+figcaption{
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+#flagga {
+    min-height: auto;
+    width: 70%;
+
+    border: 2px white solid;
+}
   
 
 .fakta {
     grid-column: 1/3;
 
-    font-size: 1rem;
+    font-size: 1.5rem;
 
     color: #fff;
 }
@@ -497,6 +521,8 @@ th, td, tr {
 .kallor{
     font-size: 1rem;
 }
+
+
 /*----- FOOTER -----*/
 footer {
     display: grid;

@@ -702,7 +702,17 @@ footer a:hover {
     #beskrivning{
         min-width: 75%;
     }
-
+    body{
+        grid-template-areas: 
+    "H H H H H H H H H H H H"
+    "N N N N N N N N N N N N"
+    "C C C C C C C C C C C C"
+    "F F F F F F F F F F F F"
+    ;
+    }
+    .contentindex{
+        padding: 20px;
+    }
 }
 
 @-o-viewport{

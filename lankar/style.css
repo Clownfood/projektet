@@ -27,6 +27,10 @@ body {
     background-color:#8b90ad ;
 }
 
+alt{
+    font-size: 1rem;
+    font-style: italic;
+}
 a {
     color:white;
     text-decoration: none;
@@ -477,7 +481,7 @@ figcaption{
 
 #flagga {
     min-height: auto;
-    width: 10%;
+    width: 50%;
 
     border: 2px white solid;
 }
@@ -619,9 +623,6 @@ footer a:hover {
     .container--ph {
         padding-top: 45%;
     }
-    #flagga{
-        width: 30%;
-    }
 }
 @media all and (max-width: 1500px) {
     .container--ph {
@@ -643,9 +644,6 @@ footer a:hover {
     }
     nav{
         font-size: 1rem;
-    }
-    #flagga{
-        width: 70%;
     }
 }
 @media all and (max-width: 900px) {
@@ -715,5 +713,3 @@ footer a:hover {
     zoom: 1.0;
     width: extend-to-zoom;
 }
-
-

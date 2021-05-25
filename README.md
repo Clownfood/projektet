@@ -4,6 +4,11 @@
 
 Denna sida är skriven som en informationskälla om den europeeiska unionen EU och är riktad till låg till mellanstadieelever. Hemsidan tar upp kort info om varje land som är medlem samt kort information om unionens historia, vad den är, och hur unionen samarbetar med Sverige. På startsidan finns även en interaktiv kart där de som vågar sig på kan genom sina geografiska kunskaper kliak på det land som de vill veta information om.
 
+## Planering
+
+Från början så var det mycket stökigt i mitt huvud med idéer överallt på hur saker skulle se ut m.m. Jag gjorde snabbt upp ett arbetsschema för att få en visuell bild på hur arbetet skulle utföras och under hur långt tidsspann det skulle vara. 
+    ![Schemat](Design/Schema-projektet.jpg "Schemat för projektet")
+
 ## Den interaktiva kartan
 
 De interaktiva kartan är skapat från ett svg-element. Ett svg-element, eller Scaleable Vector Graphic, är ett XML-baserat Vektorgrafikfilformat som används för interaktiva tvådimensionella bilder.
@@ -17,7 +22,7 @@ SVG-kartan var även gratis nedladdad, Royalty free, från [Simplemaps.com](http
 
 ## Hemsidans uppbyggnad
 
-Hemsidan är uppbyggd på en gridarkitektur som var planderad från början:
+Hemsidan är uppbyggd på en gridarkitektur som var planderad från början och skulle se ut så här, roughly:
     ![Förstasidan](Design/Förstasida.jpg "Förstasidan")
 Och gjordes på detta sättet:
 

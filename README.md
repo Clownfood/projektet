@@ -14,3 +14,27 @@ Jag fick idén från mitt huvud men jag blev inspirerad från geografihemsidan [
 Utifrån det så improviserade jag baserat på mina egna kunskaper och ändrade på både HTML-koden och CSS-koden för att få önskat resultat. Till exemplel så gjorde jag så att endast de länderna som är medlem i EU kan klickas på och lite småsaker.
 
 SVG-kartan var även gratis nedladdad, Royalty free, från [Simplemaps.com](https://simplemaps.com/resources/svg-europe).
+
+## Hemsidans uppbyggnad
+
+Hemsidan är uppbyggd på en gridarkitektur som var planderad från början:
+    ![Förstasidan](Design/Faktasida.jpg)
+Och gjordes på detta sättet:
+
+```CSS
+    body {
+        ...
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 150px auto 1fr auto;
+        grid-template-areas: 
+        "H H H H H H H H H H H H"
+        "N N N N N N N N N N N N"
+        ". C C C C C C C C C C ."
+        "F F F F F F F F F F F F"
+        ;
+
+        ...
+    }
+```

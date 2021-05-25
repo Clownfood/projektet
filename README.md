@@ -18,7 +18,7 @@ SVG-kartan var även gratis nedladdad, Royalty free, från [Simplemaps.com](http
 ## Hemsidans uppbyggnad
 
 Hemsidan är uppbyggd på en gridarkitektur som var planderad från början:
-    ![Förstasidan](Design/Faktasida.jpg)
+    ![Förstasidan](Design/Faktasida.jpg "Förstasidan")
 Och gjordes på detta sättet:
 
 ```CSS

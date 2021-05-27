@@ -86,12 +86,18 @@ Det är värt att nämna att internet explorer inte har enn uppdaterad standard 
 
 Hemsidan är testad av både mig och andra personer och har fått konstruktiv kridik om hur tydlig, snygg, och informativ den är. Strartsidan är till för att informera om sidan och ur den fungerar, navbaren hänvisar till subsidor med tydlighet. Projektet anses ha bra tillänglighet utifrån tester och är utvecklad utifrån standard.
 
-Alla sidor använder utf-8 som teckenkodning vilket är enligt standard för HTML-5, och innebär att tecken såsom "ÅÄÖ" blir "ÅÄÖ" och inte ���. Detta är viktigt att ange så folk från andra länder som inte har utf-8 som teckenkonding som standard på sit operativsystem fortfarande kan se korrekta tecken.
+Alla sidor använder utf-8 som teckenkodning vilket är enligt standard för HTML-5, och innebär att tecken såsom "ÅÄÖ" blir "ÅÄÖ" och inte ��� eller liknande. Detta är viktigt att ange så webbläsaren vet vilket teckenkodning som behövs för hemsidan oh så att alla tecken blir korrekta.
+
+I headern ska man då ha:
+```HTML
+    <meta charset="UTF-8">
+```
 
 Alla sidor har även svenska som språk, dvs
 ```HTML
     <html lang="sv">
 ```
+i headern.
 Detta berättar för webbläsaren vilket internationellt språk hemsidan är skrivet på och gör det lättare för den att rekommendera den till rätt folk.
 
 ## Tredjepartskod
@@ -134,6 +140,11 @@ Olika lagar gäller för olika länder däremot så det gäller att vara försik
 Jag själv anser upphovsrättslagar som väldigt nödvändiga då det finns väldigt många personer som livnär sig på att skapa originella verk, vilket innebär att om någon skulle ta ens verk och tjäna pengar på det så hade personen som skapade verket gått miste om pengar, särskiljt om de jobbat hårt påå verket. En sak som är värd att diskutera är ver man ska dra gränsen, och vad som är etsikt. Till exempel så är upphovsrätt på en låt helt annorlunda mot upphovsrätt på ett läkemedel. Om läkemedlet är livsviktigt så kan det vara skillnad på liv och död att hålla på receptet endast för att tjäna pengar.
 
 ## Webbhotell
+Ett webbhotell är i simpelheten en internetuppkopplad serverbas där man kan hyra plats för sin hemsida om man inte har tid, pengar, eller resurser för att upprätthålla en egen server för sin hemsida.
+
+När man väljer webbhotell är det viktigt att man tänker på flera faktorer så man får bäst service för sin hemsida. Om ens sida inehåller mycket data som måste lagras så behöver man tänka på att välja ett webhotell med mycket lagring så hemsidan alltid fungerar. Samma gäller om man har en hemsida som man vet kommer ha mycket datatrafik så krävs även ett webbhotell som klarar av tilräckligt mycket trafikmängd utan att hemsidan blir långsam eller får trafikstopp och inte längre går att använda.
+
+Att ha en hög upptid är bra för driftsäkerheten, där en hög upptid innebär att webbhotellet driftas under så långa perioder som möjligt utan att behövas startas om. Om man har en hemsida med viktig och känslig information så spelar upptiden stor roll, och det kan även vara bra om webbhotellet har ett backupsystem då förlorad data kan betyda både lagliga och ekonomiska problem. 
 
 ## Allmänna förbättringar
 

@@ -147,5 +147,10 @@ När man väljer webbhotell är det viktigt att man tänker på flera faktorer s
 Att ha en hög upptid är bra för driftsäkerheten, där en hög upptid innebär att webbhotellet driftas under så långa perioder som möjligt utan att behövas startas om. Om man har en hemsida med viktig och känslig information så spelar upptiden stor roll, och det kan även vara bra om webbhotellet har ett backupsystem då förlorad data kan betyda både lagliga och ekonomiska problem. 
 
 ## Allmänna förbättringar
+Om jag skulle göra detta projekt i framtiden så hade jag gjort några saker på ett annorlunda sätt. För det första så har detta varit väldigt lärorikt och genom att göra detta igen så skulle många saker gå mycket fortare. 
 
-## Slutsats
+Till exempel så hade jag redan från början tänkt på kontrasten mellan färger på hemsidan så att alla kan använda den, dvs öka tillgängligheten. Något som även hör till detta är att anpassa bilder från början så att hemsidans prestanda inte försämras så mycekt på grund av det.
+
+För det andra så hade jag velat säga åt mig själv att fixa allting in i det minsta detalj så att jag är nöjd med allt innan jag gör kopior av dem så jag slipper gå igenom alla sidor och göra find-replace metoden vilket tar mycket längre tid, tid som jag skulle kunnat lagt på att föbättra andra aspekter med sidan.
+
+Nu har jag mer koll på allting, så om jag skulle göra detta igen så hade jag varit mer sparsam och mindre stökig i hur jag la upp arbetet och filerna. Allt för att optimera tiden det tar att göra arbetet och lägga mer tid på kvalité.

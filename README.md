@@ -55,7 +55,7 @@ Nu i efterhand så tycket jag att båda sätten är bra alternativ. Den första 
 
 De interaktiva kartan är skapat från ett svg-element. Ett svg-element, eller Scaleable Vector Graphic, är ett XML-baserat Vektorgrafikfilformat som används för interaktiva tvådimensionella bilder.
 
-Jag fick idén från mitt huvud men jag blev inspirerad från geografihemsidan [Seterra.com](https://online.seterra.com/sv) då de har liknande kartor i spelform där man får klicka på kartan och länderna. Jag visste dock inte att det var SVG som man använde för det och efter lite random research så hittade jag en artikel som gick igenom exakt hur man skulle göra för att få en fungerande och responsiv karta där man kan klicka på länderna. 
+Jag fick idén från mitt huvud och kunde direkt dra paraleller till geografihemsidan [Seterra.com](https://online.seterra.com/sv) då de har liknande kartor i spelform där man får klicka på kartan och länderna, och blev inspirerad. Jag visste dock inte att det var SVG som man använde för det och efter lite random research så hittade jag en artikel som gick igenom exakt hur man skulle göra för att få en fungerande och responsiv karta där man kan klicka på länderna. 
 [Här är hemsidan](https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals#making-it-responsive)
 
 Den som skrivit artikeln gav läsarna tillåtelse att använda koden som han lärde ut, så det var det jag gjorde, vilket underlättade extremt mycket.
@@ -64,13 +64,31 @@ Utifrån det så improviserade jag baserat på mina egna kunskaper och ändrade 
 
 SVG-kartan var även gratis nedladdad, Royalty free, från [Simplemaps.com](https://simplemaps.com/resources/svg-europe).
 
-## Javascript
+## Validering och hastighet
 
+Alla html- och css-filer är validerade på [validator.w3.org](https://validator.w3.org/) respektive [jigsaw.w3c.org](https://jigsaw.w3.org/css-validator/). Hemsidan hade från början många problem som jag som tur va upptäckte i tid för att ändra på innan jag stötte på allt för många problem. Exempel på dessa problem var till exempel fel child till element och så. Majoriteten av problemen hade med SVG att göra så det var bara att ta bort det de klagade på så fixades det utan att det påverkade hemsidan.
 
-## Validering
+Jag har använt mig av två olika 16:9 1080p skärmar, en laptop och en desktop, en 21:9 1442p skärm, och min och en annans mobil för at testa hemsidan för att få till optimering för alla enheter. Tillsammans med det så har jag använt mig av chromes inbyggda storleksfunktion där man kan kolla hur hemsidan ser ut i varje bredd och varje höjd, vilket hjälpte mycket när jag skulle andvända mig av mdeia-queries.
 
-Alla html- och css-filer är validerade på css och html validator utan problem. Hemsidan hade från början många problem som jag som tur va upptäckte i tid för att ändra på innan jag stötte på allt för många problem. Exempel på dessa problem var till exempel fel child till element och så. Majoriteten av problemen hade med SVG att göra så det var bara at tta bort det de klagade på så fixades det utan att det påverkade hemsidan.
+Jag anvädne mig även av Chrome-tillägget [lighthouse](https://developers.google.com/web/tools/lighthouse). Vad detta gör är att kolla på olika områden såsom prestanda, tillgänglighet för alla användare m.m, och ger ett betyg av 100. Det var många saker som jag ansåg som småsaker som de tyckte skulle ändras på. Till exempel så var tillgängligheten lite sämre då kontrasten var för liten på vissa delar av hemsidan mellan text och bakgrund. Vad detta leder till är att färgblinda personer eller personer med nedsatt syn har det svårare att använda sidan. För att lösa detta så gick jag bara in i CSS och ökade kontrasten så att det blev bättre och mer läsbart.
 
-Jag har använt mig av två olika 16:9 1080p skärmar, en laptop och en desktop, en 21:9 1442p skärm, och min och en annans mobil för at testa hemsidan för att få till optimering för alla enheter. Tillsammans med det så har jag använt mig av chromes inbyggda storleksfunktion där man kan kolla hur hemsidan ser ut i varje bredd och varje höjd, vilket hjälpte mycket när jag skulle andvända mig av mdeia-queries 
+Lighouse tyckte även att bilderna kunde komprimeras för att göra hemsidan snabbare, så det var edt jag gjorde. Jag gjorde detta genom att lägga in bilderna som användes i [iloveimg.com](https://www.iloveimg.com/sv/komprimera-bild).
+
+Hemsidan testades även på olika webbläsare såsom, Firefox, Edge, internet explorer, samt google chrome. Alla dessa testades i olika upplösningar med tillfredsställande resultat. Testerna gjordes i [Browserstack](https://www.browserstack.com/). 
+
+Det är värt att nämna att internet explorer inte har enn uppdaterad standard och därav fungerar varken css grid eller kartan, som är skriven i XML, och därför kan internet explorer försummas.
+
+## Riktlinjer
+
+Hemsidan är testad av både mig och andra personer och har fått konstruktiv kridik om hur tydlig, snygg, och informativ den är. Strartsidan är till för att informera om sidan och ur den fungerar, navbaren hänvisar till subsidor med tydlighet. Projektet anses ha bra tillänglighet utifrån tester och är utvecklad utifrån standard.
+
+Alla sidor använder utf-8 som teckenkodning vilket är enligt standard för HTML-5, och innebär att tecken såsom "ÅÄÖ" blir "ÅÄÖ" och inte ���. Detta är viktigt att ange så folk från andra länder som inte har utf-8 som teckenkonding som standard på sit operativsystem fortfarande kan se korrekta tecken.
+
+Alla sidor har även svenska som språk, dvs
+```HTML
+    <html lang="sv">
+```
+
+## Tredjepartskod
 
 ## Bilder och upphovsrätt

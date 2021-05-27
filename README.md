@@ -88,7 +88,15 @@ Alla sidor har även svenska som språk, dvs
 ```HTML
     <html lang="sv">
 ```
+Detta berättar för webbläsaren vilket internationellt språk hemsidan är skrivet på och gör det lättare för den att rekommendera den till rätt folk.
 
 ## Tredjepartskod
+    Jag har vid två tillfällen under projektets gång använt mig utav kod som inte jag själv skrivit. Ett utav de är akrtan och dess funktion, som jag nämnde tidigare, den andra är sidebaren som åker ut när man klickar på knappen "Medlemsländer". Sidebaren skapade jag med hjälp av en YouTube tutorial från kanalen [CodingFlag](https://www.youtube.com/channel/UCXDLrsqe14uFu6k96xjlF4w). Jag Tog endast javascriptet och dess idn för att få funktionen, resten gjorde jag för egen hand. Länken till videon: (https://www.youtube.com/watch?v=uWUNZ4u1VLA&ab_channel=Codingflag)
 
 ## Bilder och upphovsrätt
+
+## Webbhotell
+
+## Allmänna förbättringar
+
+## Slutsats

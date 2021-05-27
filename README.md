@@ -23,6 +23,8 @@ De interaktiva kartan är skapat från ett svg-element. Ett svg-element, eller S
 Jag fick idén från mitt huvud men jag blev inspirerad från geografihemsidan [Seterra.com](https://online.seterra.com/sv) då de har liknande kartor i spelform där man får klicka på kartan och länderna. Jag visste dock inte att det var SVG som man använde för det och efter lite random research så hittade jag en artikel som gick igenom exakt hur man skulle göra för att få en fungerande och responsiv karta där man kan klicka på länderna. 
 [Här är hemsidan](https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals#making-it-responsive)
 
+Den som skrivit artikeln gav läsarna tillåtelse att använda koden som han lärde ut, så det var det jag gjorde, vilket underlättade extremt mycket.
+
 Utifrån det så improviserade jag baserat på mina egna kunskaper och ändrade på både HTML-koden och CSS-koden för att få önskat resultat. Till exemplel så gjorde jag så att endast de länderna som är medlem i EU kan klickas på och lite småsaker.
 
 SVG-kartan var även gratis nedladdad, Royalty free, från [Simplemaps.com](https://simplemaps.com/resources/svg-europe).
@@ -59,6 +61,8 @@ Så här såg idén ut från början:
 
 Och så här ser den ut på slutprodukten:
         ![Faktasida2](Design/Faktasida2.png "Hur faktasidan blev")
+
+Nu i efterhand så tycket jag att båda sätten är bra alternativ. Den första idén hade lite mer struktur än hur edt faktiskt blev då man lätt kan anvädna sig av grid
 ## Javascript
 
 

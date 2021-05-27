@@ -58,7 +58,7 @@ Så här såg idén ut från början:
     ![Faktasida](Design/Faktasida.jpg "Orginalidén för faktasidan")
 
 Och så här ser den ut på slutprodukten:
-        ![Faktasida](Design/Faktasida2.jpg "Hur faktasidan blev")
+        ![Faktasida2](Design/Faktasida2.png "Hur faktasidan blev")
 ## Javascript
 
 

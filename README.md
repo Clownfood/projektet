@@ -103,7 +103,35 @@ Just i detta fallet så var koden så simpel att farlig kod kudne upptäckas på
 ## Bilder och upphovsrätt
 Alla bilder använda på hemsidan var antingen nedladdade från [Pixabay.com](https://pixabay.com/sv/) eller gjorda av mig, som i fallet med flaggorna, dvs Jag, Hannes Nilsson, gjorde flaggorna själv för att undvika onödiga copyrightproblem. Informationen som används på sidan är endast tagen från [Europa.eu](https://europa.eu/european-union/index_sv) vilket är EUs officiella hemsida och har information i den allmänna domänen.
 
-Detta innebär att i mitt fall så gäller inte några copyright-lagar, men vilka är dem och var innebär dem.
+Detta innebär att i mitt fall så gäller inte några copyright-lagar då de gratis nedladdade bilderna är royalty free vilket innebär att jag kan använda upphovsrättsskyddat material utan att behöva betala för rättigheterna att använda bilderna. Vilka är lagarna och var innebär dem?
+
+Upphovsrätt, eller copyright som det heter på engelska, är den ekonomiska och ägande rätten till ett originellt verk som den som skapat verket har. Denna person kallas för upphovsperson och får bestämma hur, var, och om verket får användas. Oftast så kräver. Upphovsrätt till ett verk försvinner 70 år efter hupphovspersonen dött och verket övergår till det publika domänet.
+
+Någonting som även kan vara aktuellt är frågor om etik när det gäller bilder eller namngivningar på andra personer eller privata ägodelar så som bilar. Just Om jag till exempel hade haft bilder på personer på min hemsida så hade jag antingen behövt be om lov att få använda en bild på dem på min hemsida, eller så hade jag behövt sudda ut personens ansikte. Just i mitt fall så är jag den enda perosnen som nämns och jag samtycker med mig själv att mitt namn får användas.
+
+Enligt kapitel 1, paragraf 1 om upphovsrätt så omfattas upphovsrätt av:
+
+    1 §   Den som har skapat ett litterärt eller konstnärligt verk har upphovsrätt till verket oavsett om det är
+    1. skönlitterär eller beskrivande framställning i skrift eller tal,
+    2. datorprogram,
+    3. musikaliskt eller sceniskt verk,
+    4. filmverk,
+    5. fotografiskt verk eller något annat alster av bildkonst,
+    6. alster av byggnadskonst eller brukskonst, eller
+    7. verk som har kommit till uttryck på något annat sätt.
+
+    Till litterära verk hänförs kartor, samt även andra i teckning eller grafik eller i plastisk form utförda verk av beskrivande art.
+
+    Vad som i denna lag sägs om datorprogram skall i tillämpliga delar gälla även förberedande designmaterial för datorprogram.
+    Lag (1994:190).
+
+Upphovsrätt gäller däremot inte för yttranden av svenska myndigheter, eller beslut av svenska myndigheter, och det är därför jag får använda mig utav denna lagtext utan att be om lov. [Riksdagen.se](https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1960729-om-upphovsratt-till-litterara-och_sfs-1960-729)
+
+Straffet för att bryta mot upphovslagen kan vara böter eller fängelse, och beroende på graden så kan fängelsestraffet vara i upp till sex år. [Lagen.nu](https://lagen.nu/sou/2018:6)
+
+Olika lagar gäller för olika länder däremot så det gäller att vara försiktig när jobbar med hemsidor som jag gör i detta fallet då andra regler kan gälla. Det är väldigt suddiga gränser på vad som är ok och inte nuförtiden så det gäller att ha stenkoll så man inte råkar ut för ett brott.
+
+Jag själv anser upphovsrättslagar som väldigt nödvändiga då det finns väldigt många personer som livnär sig på att skapa originella verk, vilket innebär att om någon skulle ta ens verk och tjäna pengar på det så hade personen som skapade verket gått miste om pengar, särskiljt om de jobbat hårt påå verket. En sak som är värd att diskutera är ver man ska dra gränsen, och vad som är etsikt. Till exempel så är upphovsrätt på en låt helt annorlunda mot upphovsrätt på ett läkemedel. Om läkemedlet är livsviktigt så kan det vara skillnad på liv och död att hålla på receptet endast för att tjäna pengar.
 
 ## Webbhotell
 

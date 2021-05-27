@@ -98,8 +98,12 @@ Detta berättar för webbläsaren vilket internationellt språk hemsidan är skr
 Jag har vid två tillfällen under projektets gång använt mig utav kod som inte jag själv skrivit. Ett utav de är akrtan och dess funktion, som jag nämnde tidigare, den andra är sidebaren som åker ut när man klickar på knappen "Medlemsländer". Sidebaren skapade jag med hjälp av en YouTube tutorial från kanalen [CodingFlag](https://www.youtube.com/channel/UCXDLrsqe14uFu6k96xjlF4w). Jag Tog endast javascriptet och dess idn för att få funktionen, resten gjorde jag för egen hand. Länken till videon: https://www.youtube.com/watch?v=uWUNZ4u1VLA&ab_channel=Codingflag
 
 Det är viktigt att verkligen kolla igenom och ha lite vetskap om koden när man lånar kod från någon annan hemsida eller tutorial (efter att ha frågat om lov förståss). Detta därför att det finns risk för farlig kod gömd inuti kod som ser okej ut från utsidan. Kod som till exempel kan sno känslig och/eller personlig information vilket är en laglig och identitetsrisk.
+Just i detta fallet så var koden så simpel att farlig kod kudne upptäckas på ett lätt sätt, men om längre kod skulle användas så blir risket att farlig kod smiter förbi.
 
 ## Bilder och upphovsrätt
+Alla bilder använda på hemsidan var antingen nedladdade från [Pixabay.com](https://pixabay.com/sv/) eller gjorda av mig, som i fallet med flaggorna, dvs Jag, Hannes Nilsson, gjorde flaggorna själv för att undvika onödiga copyrightproblem. Informationen som används på sidan är endast tagen från [Europa.eu](https://europa.eu/european-union/index_sv) vilket är EUs officiella hemsida och har information i den allmänna domänen.
+
+Detta innebär att i mitt fall så gäller inte några copyright-lagar, men vilka är dem och var innebär dem.
 
 ## Webbhotell
 
